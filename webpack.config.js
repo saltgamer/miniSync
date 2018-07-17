@@ -8,13 +8,13 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development', // "production" | "development" | "none"
+    mode: 'production', // "production" | "development" | "none"
     entry: ['babel-polyfill', 'whatwg-fetch', './src/js/main.js'],
     output: {
         filename: 'miniSync.js',
         path: path.resolve(__dirname, 'dist')
     },
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
     module: {
         rules: [
             {
